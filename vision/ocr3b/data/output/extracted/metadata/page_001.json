@@ -1,0 +1,60 @@
+{
+  "page_num": 1,
+  "image_width": 2481,
+  "image_height": 3507,
+  "created_at": "2026-07-22T11:54:17.160703+00:00",
+  "blocks": [
+    {
+      "block_id": "20260722_5f0a5151-98d5-4830-a562-e088e5c4cbd4_1_block_000",
+      "coordinates": {
+        "x1": 468.0,
+        "y1": 266.0,
+        "x2": 2017.0,
+        "y2": 470.0
+      },
+      "layout_tag": "headline",
+      "confidence": 0.3116084933280945,
+      "reading_order": 1,
+      "text": "Digitizing Paper Archives\nA Short Guide to Document Understanding"
+    },
+    {
+      "block_id": "20260722_5f0a5151-98d5-4830-a562-e088e5c4cbd4_1_block_001",
+      "coordinates": {
+        "x1": 688.0,
+        "y1": 499.0,
+        "x2": 1792.0,
+        "y2": 557.0
+      },
+      "layout_tag": "paragraph",
+      "confidence": 0.8150237798690796,
+      "reading_order": 2,
+      "text": "Sample document for OCR demonstration purposes"
+    },
+    {
+      "block_id": "20260722_5f0a5151-98d5-4830-a562-e088e5c4cbd4_1_block_002",
+      "coordinates": {
+        "x1": 168.15791015625,
+        "y1": 719.8939453125,
+        "x2": 2028.854296875,
+        "y2": 2468.59921875
+      },
+      "layout_tag": "ordered-list",
+      "confidence": 0.84619140625,
+      "reading_order": 3,
+      "text": "**1. Introduction**\n\nOrganizations accumulate large volumes of paper records: invoices, contracts, application forms, and handwritten notes. Converting these documents into searchable, structured digital text unlocks automation, auditability, and analytics that are impossible with scanned images alone.\n\n\n**2. What an OCR System Produces**\n\nModern optical character recognition goes beyond plain text extraction. For every page, a document-understanding model typically returns:\n\n• The recognized text, in natural reading order\n• Layout regions such as headings, paragraphs, and tables\n• Bounding-box coordinates for every detected block\n• A confidence score for each prediction\n\n\n**3. Common Applications**\n\nTypical uses include invoice processing, know-your-customer document verification, digitization of government records, and making printed books and newspapers searchable. In multilingual regions, OCR systems must handle several scripts within a single page."
+    },
+    {
+      "block_id": "20260722_5f0a5151-98d5-4830-a562-e088e5c4cbd4_1_block_003",
+      "coordinates": {
+        "x1": 1052.1,
+        "y1": 3257.67421875,
+        "x2": 1430.1984375,
+        "y2": 3443.98359375
+      },
+      "layout_tag": "footer",
+      "confidence": 0.265869140625,
+      "reading_order": 4,
+      "text": "Page 1 of 2"
+    }
+  ]
+}

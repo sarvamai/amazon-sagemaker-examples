@@ -9,28 +9,25 @@ Each notebook walks through the full lifecycle of a listing: subscribing to the 
 Examples are grouped by **product type**, then by **model** (one folder per marketplace listing). Models of the same product type can have different input/output schemas, so every model folder is fully self-contained — its notebook, sample inputs, and expected outputs live together:
 
 ```
-<product-type>/                     e.g. speech-to-text, text-to-speech, ocr, llm, translate
-└── <model>/                        e.g. saaras-v3.1
+<product-type>/                     e.g. speech-to-text, vision, text-to-speech, llm, translate
+└── <model>/                        e.g. saaras-v3.1, ocr3b
     ├── <model>-Model.ipynb         sample notebook for the listing
     ├── README.md                   model overview + I/O schema summary
     └── data/
         ├── input/                  sample payloads used by the notebook
-        │   ├── real-time/
-        │   ├── streaming/          (only for products with a streaming API)
-        │   └── batch/
         └── output/                 expected responses for the sample inputs
-            ├── real-time/
-            ├── streaming/
-            └── batch/
 ```
+
+Products whose payload format differs per inference mode (e.g. speech-to-text) further split `data/input` and `data/output` into `real-time/`, `streaming/`, and `batch/` subfolders.
 
 ## Available examples
 
 | Product type | Model | Notebook |
 |---|---|---|
 | Speech-to-Text | Saaras v3.1 | [speech-to-text/saaras-v3.1](speech-to-text/saaras-v3.1/saaras-v3.1-speech-to-text-Model.ipynb) |
+| Vision (OCR) | OCR 3B | [vision/ocr3b](vision/ocr3b/ocr3b-vision-Model.ipynb) |
 
-More product types (text-to-speech, OCR, LLM, translate) will be added as their marketplace listings launch.
+More product types (text-to-speech, LLM, translate) will be added as their marketplace listings launch.
 
 ## Prerequisites
 
